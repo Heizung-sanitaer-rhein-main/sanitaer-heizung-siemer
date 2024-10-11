@@ -1,0 +1,226 @@
+div.breadcrumbs {
+    display: none;
+}
+
+.header_image {
+    text-align: center;
+}
+
+.header_image img {
+    max-width: 1600px;
+    width: 100%;
+}
+
+.ph-nav-left {
+
+    z-index: 10;
+}
+
+.site-content {
+
+    padding-top: 2em;
+}
+
+/*
+.ls-fullscreen-wrapper {
+
+
+    max-width: 1600px;
+    text-align: center;
+    margin: auto;
+}
+*/
+.ph-elementor-section-odd {
+    background-color: var(--ph-background-color);
+}
+
+.ph-elementor-section-even {
+
+}
+
+
+#design-3-container .elementor-section-stretched.elementor-section-full_width {
+
+    left: 0px !important;
+    /*right: +15px !important;*/
+    /* Firefox */
+    width: -moz-calc(100% + 15px) !important;
+    /* WebKit */
+    width: -webkit-calc(100% + 15px) !important;
+    /* Opera */
+    width: -o-calc(100% + 15px) !important;
+    /* Standard */
+    width: calc(100% + 15px) !important;
+}
+
+/**
+* --------------------------------------------
+* Override Elementor Styles (with important it even overrides the on-flight styles in the elementor preview. But then no override with a specific color is possibile.)
+* Better would be to set the elementor global styles...
+* --------------------------------------------
+*/
+
+#wrapper-navbar .navbar {
+    background-color: #fff;
+    border-bottom: 0px;
+    -webkit-transition: background 0.3s, border 0.3s, border-radius 0.3s, -webkit-box-shadow 0.3s;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, -webkit-box-shadow 0.3s;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s;
+    padding: 0;
+}
+
+/**
+* Other css
+*
+*/
+
+.ph-widget-title {
+    font-family: var(--ph-main-font-family), sans-serif;
+    font-size: 16px;
+    font-size: 1.1rem;
+    letter-spacing: .046875em;
+    line-height: 1.3125;
+    margin: 0 0 1.75em;
+    text-transform: uppercase;
+    font-weight: 200;
+    border-bottom: 2px solid #CCC;
+    padding-bottom: 13px;
+}
+
+/**
+* Adjust theme style.css
+*
+*/
+
+h5 {
+}
+
+h5:after {
+    border-bottom: 3px solid var(--ph-primary-color-alt);
+}
+
+.aktionsflaeche-b h5 {
+    font-weight: 500 !important;
+}
+
+.aktionsflaeche-b h5:after {
+    width: 40%;
+}
+
+.aktionsflaeche-element:after {
+    content: " ";
+    position: absolute;
+    left: 10px;
+    right: 60%;
+    bottom: -15px;
+    border-bottom: 3px solid var(--ph-primary-color-alt);
+}
+
+
+.aktionsflaeche_content {
+}
+
+
+#back-to-top {
+    background: #d6d6d6;
+}
+
+#back-to-top:hover {
+    background: var(--ph-secondary-color-alt);
+}
+
+
+
+
+
+/**
+* ---------------------------------------------------------------------------------------------------------------------
+ * Badcalculator
+* ---------------------------------------------------------------------------------------------------------------------
+ */
+.gform_wrapper{
+    /*background-color: var(--ph-primary-color-alt);*/
+}
+
+.gform_wrapper input {
+    line-height: normal;
+}
+
+.gform_wrapper button,
+.gform_wrapper button[disabled]:hover,
+.gform_wrapper button[disabled]:focus,
+.gform_wrapper input[type="button"],
+.gform_wrapper input[type="button"][disabled]:hover,
+.gform_wrapper input[type="button"][disabled]:focus,
+.gform_wrapper input[type="reset"],
+.gform_wrapper input[type="reset"][disabled]:hover,
+.gform_wrapper input[type="reset"][disabled]:focus,
+.gform_wrapper input[type="submit"],
+.gform_wrapper input[type="submit"][disabled]:hover,
+.gform_wrapper input[type="submit"][disabled]:focus {
+    background: var(--ph-secondary-color);
+}
+
+.gform_wrapper button:hover,
+.gform_wrapper button:focus,
+.gform_wrapper input[type="button"]:hover,
+.gform_wrapper input[type="button"]:focus,
+.gform_wrapper input[type="reset"]:hover,
+.gform_wrapper input[type="reset"]:focus,
+.gform_wrapper input[type="submit"]:hover,
+.gform_wrapper input[type="submit"]:focus {
+    background: var(--ph-secondary-color-alt);
+}
+
+.gform_wrapper button:focus,
+.gform_wrapper input[type="button"]:focus,
+.gform_wrapper input[type="reset"]:focus,
+.gform_wrapper input[type="submit"]:focus {
+    outline: thin dotted;
+    outline-offset: -4px;
+}
+
+.gfield_label {
+    color: #fff;
+}
+
+.gform_wrapper input[type="text"],
+.gform_wrapper input[type="email"],
+.gform_wrapper input[type="url"],
+.gform_wrapper input[type="password"],
+.gform_wrapper input[type="search"],
+.gform_wrapper input[type="tel"],
+.gform_wrapper input[type="number"],
+.gform_wrapper textarea {
+    background: rgba(255, 255, 255, 0.5);
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    border: 0px solid #d1d1d1;
+    border-radius: 0px;
+    color: #fff;
+}
+
+.gform_wrapper input:focus,
+.gform_wrapper textarea:focus {
+    background: #fff;
+}
+
+
+
+.gform_wrapper label,
+.gform_wrapper .gform_title,
+.gform_wrapper  b,
+.gform_wrapper   a {
+    color: #fff;
+}
+
+.gform_wrapper .gfield_required{
+    color: #fff!important;
+}
+
+h2.elementor-size-xxl:after {
+    content: "—";
+    display: block;
+    line-height: 2px;
+    color: var(--ph-primary-color-alt);
+}
